@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Japan in decade of Earthquakes</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='./css/style.css' rel='stylesheet' />
+</head>
+
+
+<body>
+    
+    <nav id="menu"></nav>
+    <div id='map'></div>
+
+    <div class='map-overlay top'>
+
+        <div class='map-overlay-inner'>
+            <h2>Last Decade</br>
+                of Earthquake</br>
+                in Japan</h2>
+            <p>When you first experiencing the earthquake for the first time you wonder how long and how strong it will be.
+                You start searching and some time after you will probably stuck at earthquake. usgs.gov. It has every type
+                of information about earthquake. Except one.It is really hard to tell how it fill So this study is trying
+                to answer the question – how it feels to live with an earthquake in specific area during the year. We took
+                data about earthquakes in Japan for lst 20 years and applied them on the map distruibuted by hexagons. Each
+                hexagons recieved a set of multiplied values – summary for 20 years and 20 specific values per each year.</p>
+            <label id='fyear'></label>
+            <input id='slider' type='range' min='1998' max='2017' step='1' value='1998' />
+        </div>
+
+        <div class='map-overlay-inner'>
+            <div id='legend' class='legend'>
+                <div class='bar'></div>
+                <div>Magnitude (m)</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <script src='//d3js.org/d3.v3.min.js' charset='utf-8'></script>
+    <script src='js/toggle.js' charset='utf-8'></script>
+     <script src='js/popup.js' charset='utf-8'></script>
+    <script src='js/map.js' charset='utf-8'></script>
+
+</body>
+
+</html>
